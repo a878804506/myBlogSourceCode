@@ -4,8 +4,8 @@
 
 # Site
 title: 云辉相映
-subtitle: 子标题
-description: 折腾!不折腾浑身难受。
+subtitle: 写篇博客一时爽，一直写一直爽！
+description: 折腾！不折腾浑身难受。
 keywords:
 author: 陈韵辉
 language: zh-CN
@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://myblog.erdongchen.top
 root: /
-permalink: :year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -29,7 +29,8 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+# 博客文件名生成规则
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
