@@ -1,11 +1,15 @@
+# menu子菜单，可自定义
 menu:
   #Archives: /archives
   我的简文: /favourite
   #一点一滴: /favourite/time.html
   他入她城: /favourite/image.html
   关于我: /aboutme
+# rss需安装插件hexo-generator-feed，详细请看：https://monniya.com/2016/02/24/create-rss/
 rss: /atom.xml
+# description配置内容会出现在meta标签中，因此会被搜索引擎抓取
 description: 
+# 不填写的链接则不显示
 social:
   weibo: 
   github: https://github.com/a878804506
@@ -15,18 +19,29 @@ social:
   google_plus: 
 
 page_comment: true
+# 封面中的头像
 logo: /images/my.jpeg
 background:
   cover: /images/background-cover.jpg
-  color: cover-purple
+  color: cover-red
+# cover-blue - #2568A3
+# cover-green - #156F78
+# cover-purple - #493252
+# cover-red - #E25440
+# cover-orange - #FB9C50
+# cover-slate - #3D4260
+# cover-disabled - 透明
 
 archive_date_format: yyyy-MM-DD
 fancybox: true
-
+# 多说的帐号名, 不配置则不启用，使用disqus请去全局_config.yml中配置disqus_shortname
 duoshuo_shortname: 
 
+# 谷歌跟踪ID
 google_analytics: UA-78918255-1
+# 百度统计识别码
 baidu_tongji: 9cdad07c755fa23f6aced510c6760e87
+# 网站角标
 favicon: /images/myGirl.jpg
 
 #mathjax

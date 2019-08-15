@@ -13,9 +13,11 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# 配置的域名
 url: http://myblog.erdongchen.top
 root: /
-permalink: /blog/:year/:month/:day/:title/
+# 配置浏览器地址栏中的URL
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -29,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-# 博客文件名生成规则
+# 配置文件命名规则
 new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
