@@ -1,0 +1,41 @@
+menu:
+  #Archives: /archives
+  我的简文: /favourite
+  #一点一滴: /favourite/time.html
+  他入她城: /favourite/image.html
+  关于我: /aboutme
+rss: /atom.xml
+description: 
+social:
+  weibo: 
+  github: https://github.com/a878804506
+  stack_overflow: 
+  facebook: 
+  twitter: 
+  google_plus: 
+
+page_comment: true
+logo: /images/my.jpeg
+background:
+  cover: /images/background-cover.jpg
+  color: cover-purple
+
+archive_date_format: yyyy-MM-DD
+fancybox: true
+
+duoshuo_shortname: 
+
+google_analytics: UA-78918255-1
+baidu_tongji: 9cdad07c755fa23f6aced510c6760e87
+favicon: /images/myGirl.jpg
+
+#mathjax
+mathjax: true
+
+# 'Read more' button
+excerpt_link: 继续阅读
+
+# Footer message
+site_license: 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+theme_message: 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+
