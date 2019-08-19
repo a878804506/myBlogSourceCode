@@ -1,7 +1,7 @@
 ---
 title: 开通博客的第一天干嘛？当然是手把手教你如何搭建博客啦！
 date: 2019-08-15 17:21:12
-tags:
+tags:耳东陈
 ---
 ### 本套博客搭建教程的前置条件：
 &emsp;&emsp;1、域名一个；
@@ -24,35 +24,35 @@ tags:
 # Hexo Configuration
 # Docs: http://hexo.io/docs/configuration.html
 # Source: https://github.com/hexojs/hexo/
-# Site
-#    title: 换成你的主页标题
-#    subtitle: 主页副标题
-#    description: 主页介绍的一句话
-#    author: 你的名字
-#    language: zh-CN #语言
-#    timezone: Asia/Shanghai #时区
+Site
+   title: 换成你的主页标题
+   subtitle: 主页副标题
+   description: 主页介绍的一句话
+   author: 你的名字
+   language: zh-CN #语言
+   timezone: Asia/Shanghai #时区
 #
 #    # URL
 #    ## If your site is put in a subdirectory,
 #    ##set url as 'http://yoursite.com/child' and root as '/child/'
 #    # 更换域名是需要配置的参数
-#    url: http://voidking.com
-#    root: /
+   url: http://voidking.com
+   root: /
 #
 #    # Extensions
 #    ## Plugins: http://hexo.io/plugins/
 #    ## Themes: http://hexo.io/themes/
-#    theme: 你用的主题文件夹名字 # themes下的文件
+   theme: 你用的主题文件夹名字 # themes下的文件
 #
 #    # Deployment
 #    ## Docs: http://hexo.io/docs/deployment.html
-#    deploy:
-#        type: git
-#        # GitHub仓库地址，此地址一定要是前置条件第四条的那个地址
-#        # 地址格式：https://github.com/你的github账号/你的github账号.github.io.git
-#        # 例如
-#        repository: https://github.com/a878804506/a878804506.github.io.git
-#        branch: master
+   deploy:
+       type: git
+       # GitHub仓库地址，此地址一定要是前置条件第四条的那个地址
+       # 地址格式：https://github.com/你的github账号/你的github账号.github.io.git
+       # 例如
+       repository: https://github.com/a878804506/a878804506.github.io.git
+       branch: master
 ```
 **<font color=red>防坑：_config.yml配置参数时，注意冒号后面一定要有一个空格</font>**
 &emsp;&emsp;2、修改主题
