@@ -4,7 +4,7 @@ menu:
   我的简文: /favourite
   #一点一滴: /favourite/time.html
   他入她城: /favourite/image.html
-  关于我: /aboutme
+  关于她: /aboutme
 # rss需安装插件hexo-generator-feed，详细请看：https://monniya.com/2016/02/24/create-rss/
 rss: /atom.xml
 # description配置内容会出现在meta标签中，因此会被搜索引擎抓取
@@ -23,7 +23,7 @@ page_comment: true
 logo: /images/my.jpeg
 background:
   cover: /images/background-cover.jpg
-  color: cover-red
+  color: cover-green
 # cover-blue - #2568A3
 # cover-green - #156F78
 # cover-purple - #493252
