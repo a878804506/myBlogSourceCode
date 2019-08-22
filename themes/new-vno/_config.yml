@@ -1,7 +1,7 @@
 # menu子菜单，可自定义
 menu:
   #Archives: /archives
-  我的简文: /favourite
+  categories: /categories/
   #一点一滴: /favourite/time.html
   他入她城: /favourite/image.html
   关于她: /aboutme

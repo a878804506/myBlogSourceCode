@@ -1,6 +1,8 @@
 ---
-title: '关于她'
+title: aboutme
 date: 2019-08-19 14:34:36
+type: "aboutme"
+layout: "aboutme"
 ---
 ### 话不多说，上图为敬！
 
