@@ -109,3 +109,10 @@ search:
   path: search.xml
   field: post
   
+# 表情配置
+githubEmojis:
+  enable: false
+  className: github-emoji
+  inject: true
+  styles: 
+  customEmojis: 

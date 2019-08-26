@@ -15,10 +15,10 @@ menu:
     icon: fa-archive
   About:
     url: /about
-    icon: fa-user-circle-o
+    icon: fa-battery-full
   Aboutshe:
     url: /aboutshe
-    icon: fa-user-circle-o
+    icon: fa-gratipay
   Friends:
     url: /friends
     icon: fa-address-book

@@ -161,9 +161,9 @@ mark {
 .container .row {
     margin-bottom: 0;
 }
-
+/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #66ccff 0%, #90ee90 100%);
 }
 
 .text-color {
@@ -403,7 +403,7 @@ header .go-back i {
 .bg-cover .post-title {
     font-size: 1.9rem;
 }
-
+/* 动态切换背景颜色*/
 @-webkit-keyframes rainbow {
     0%,
     100% {
