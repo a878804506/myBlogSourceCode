@@ -16,7 +16,7 @@ menu:
   About:
     url: /about
     icon: fa-battery-full
-  Aboutshe:
+  关于她:
     url: /aboutshe
     icon: fa-gratipay
   Friends:
@@ -50,7 +50,7 @@ music:
   autoplay: true # 是否自动播放
   theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'list' # 音频循环顺序, 可选值: 'list', 'random'
+  order: 'random' # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false # 列表默认折叠

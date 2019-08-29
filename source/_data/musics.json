@@ -1,6 +1,24 @@
-[{
-    "name": "在人间",
-	"artist": "耳东",
-	"url": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.mp3",
-	"cover": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.jpg"
-}]
+[
+	{
+		"name": "在人间",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.jpg"
+	},
+	{
+		"name": "明明就",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/mingmingjiu.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/mingmingjiu.jpg"
+	},{
+		"name": "青花瓷",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/qinghuaci.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/qinghuaci.jpg"
+	},{
+		"name": "what are words",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/whatarewords.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/whatarewords.jpg"
+	}
+]
