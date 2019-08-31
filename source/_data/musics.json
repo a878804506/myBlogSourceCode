@@ -1,24 +1,152 @@
 [
 	{
-		"name": "在人间",
+		"name": "半岛铁盒",
 		"artist": "耳东",
-		"url": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.mp3",
-		"cover": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.jpg"
+		"url": "http://myblogstaticpicture.erdongchen.top/music/bandaotiehe.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/bandaotiehe.jpg"
+	},
+	{
+		"name": "痴心绝对",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/chixinjuedui.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/chixinjuedui.jpg"
+	},
+	{
+		"name": "稻香",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/daoxiang.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/daoxiang.jpg"
+	},
+	{
+		"name": "发如雪",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/faruxue.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/faruxue.jpg"
+	},
+	{
+		"name": "枫",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/feng.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/feng.jpg"
+	},
+	{
+		"name": "告白气球",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/gaobaiqiqiu.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/gaobaiqiqiu.jpg"
+	},
+	{
+		"name": "给我一首歌的时间",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/geiwoyishougedeshijian.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/geiwoyishougedeshijian.jpg"
+	},
+	{
+		"name": "搁浅",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/geqian.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/geqian.jpg"
+	},
+	{
+		"name": "红尘来去一场梦",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/hongchenlaiquyichangmeng.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/hongchenlaiquyichangmeng.jpg"
+	},
+	{
+		"name": "菊花台",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/juhuatai.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/juhuatai.jpg"
 	},
 	{
 		"name": "明明就",
 		"artist": "耳东",
 		"url": "http://myblogstaticpicture.erdongchen.top/music/mingmingjiu.mp3",
 		"cover": "http://myblogstaticpicture.erdongchen.top/music/mingmingjiu.jpg"
-	},{
+	},
+	{
+		"name": "你是风儿我是沙",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/nishifengerwoshisha.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/nishifengerwoshisha.jpg"
+	},
+	{
+		"name": "偏偏喜欢你",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/pianpianxihuanni.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/pianpianxihuanni.jpg"
+	},
+	{
+		"name": "千里之外",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/qianlizhiwai.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/qianlizhiwai.jpg"
+	},
+	{
 		"name": "青花瓷",
 		"artist": "耳东",
 		"url": "http://myblogstaticpicture.erdongchen.top/music/qinghuaci.mp3",
 		"cover": "http://myblogstaticpicture.erdongchen.top/music/qinghuaci.jpg"
-	},{
+	},
+	{
+		"name": "手放开",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/shoufangkai.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/shoufangkai.jpg"
+	},
+	{
+		"name": "说好的幸福呢",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/shuohaodexingfune.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/shuohaodexingfune.jpg"
+	},
+	{
+		"name": "算什么男人",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/suanshenmnanren.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/suanshenmnanren.jpg"
+	},
+	{
+		"name": "往后余生",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/wanghouyusheng.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/wanghouyusheng.jpg"
+	},
+	{
 		"name": "what are words",
 		"artist": "耳东",
 		"url": "http://myblogstaticpicture.erdongchen.top/music/whatarewords.mp3",
 		"cover": "http://myblogstaticpicture.erdongchen.top/music/whatarewords.jpg"
+	},
+	{
+		"name": "我不配",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/wobupei.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/wobupei.jpg"
+	},
+	{
+		"name": "我们不一样",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/womenbuyiyang.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/womenbuyiyang.jpg"
+	},
+	{
+		"name": "一个深爱的女孩",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/yigeshenaidenvhai.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/yigeshenaidenvhai.jpg"
+	},
+	{
+		"name": "在人间",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/zairenjian.jpg"
+	},
+	{
+		"name": "做我老婆好不好",
+		"artist": "耳东",
+		"url": "http://myblogstaticpicture.erdongchen.top/music/zuowolaopohaobuhao.mp3",
+		"cover": "http://myblogstaticpicture.erdongchen.top/music/zuowolaopohaobuhao.jpg"
 	}
 ]
