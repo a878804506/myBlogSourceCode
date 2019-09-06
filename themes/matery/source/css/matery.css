@@ -31,6 +31,13 @@ body {
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
+	/**普通指针样式**/ 
+	cursor:url(http://staticfile.erdongchen.top/blog/mouse/default.cur),default; 
+}
+
+/**链接指针样式**/  
+a:hover{
+	cursor:url(http://staticfile.erdongchen.top/blog/mouse/pointer.cur),pointer;
 }
 
 h1 {
@@ -163,7 +170,7 @@ mark {
 }
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #66ccff 0%, #90ee90 100%);
+    background-image: linear-gradient(to right, #c04b21 0%, #b45393 100%);
 }
 
 .text-color {
