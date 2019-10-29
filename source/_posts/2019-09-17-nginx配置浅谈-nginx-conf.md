@@ -287,7 +287,7 @@ nginx解压目录执行：
 make
 ````
 此时，在objs下回生成新的nginx文件，覆盖到安装目录的sbin目录下面
-**<font color=red>防坑：在执行完make命令后，如果不执行make install则是添加模块，就需要把新的nginx文件覆盖到安装目录的sbin目录下！！如果接着执行make install，则表示重新安装nginx！</font>**
+ **<font color=red>防坑：在执行完make命令后，如果不执行make install则是添加模块，就需要把新的nginx文件覆盖到安装目录的sbin目录下！！如果接着执行make install，则表示重新安装nginx！</font>**
 
 3. SSL证书申请，并放置到服务器上
 证书申请可以在阿里云上申请或者腾讯云上也可以申请，有免费的，实在不行还可以自己创建证书；

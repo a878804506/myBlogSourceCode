@@ -58,7 +58,8 @@ Site
        repository: https://github.com/a878804506/a878804506.github.io.git
        branch: master
 ```
-**<font color=red>防坑：_config.yml配置参数时，注意冒号后面一定要有一个空格</font>**
+ **<font color=red>防坑：_config.yml配置参数时，注意冒号后面一定要有一个空格</font>**
+
 2. 修改主题
 找一个自己喜欢的主题，然后clone到hexo根目录下的themes目录下
 eg：切换到根目录下文件下，cmd执行
@@ -77,4 +78,4 @@ eg：切换到根目录下文件下，cmd执行
 3. Hexo根目录下会有一个source目录，在source下新建一个CNAME文件，文件内容是你刚刚配置好的域名
 4. 再次修改Hexo根目录下的_config.yml配置文件，填写url
 5. 再次执行打包上传命令 `hexo clean && hexo g && hexo d`
-**<font color=red>防坑：域名访问404，但是xxx.github.io能访问，那就说明还是你的域名配置有问题，仔细检查</font>**
+ **<font color=red>防坑：域名访问404，但是xxx.github.io能访问，那就说明还是你的域名配置有问题，仔细检查</font>**
