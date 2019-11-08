@@ -28,11 +28,11 @@ tags:
 5. 本篇使用了三台服务器，IP地址分别为192.168.1.220、192.168.1.221、192.168.1.222，并且在每台服务器上创建了一个账号和组（elk）；
 6. 此篇教程是分享个人理解的ELK技术框架，以及搭建过程，如有错误，敬请指出！
 
-### 二、ELK日志采集分析平台的技术框架介绍；
+### 二、ELK日志采集分析平台的技术框架介绍
 话不多说，先上一张网络图！
 <img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20191025/elk架构图.png"  align=left/>
 
-### 三、elasticsearch的安装部署集群环境；
+### 三、elasticsearch的安装部署集群环境
 1. 在三台服务器上都丢一个es(elasticsearch)安装包，并解压；
 <img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20191025/3.1.png"  align=left/>
 2. 在三台服务器上都创建一个账号并把elasticsearch-7.4.0文件夹的所属用户所属组改一下（elk官方不建议使用root运行ELK）
@@ -138,7 +138,7 @@ curl '192.168.1.220:9200/_cluster/state?pretty'
 ````
 
 
-### 四、kibana的安装部署（我是部署在220上,部署服务器随意选择，只要配置对就好）；
+### 四、kibana的安装部署（我是部署在220上,部署服务器随意选择，只要配置对就好）
 1. 将安装包解压至/usr/local/elk目录下，并修改权限到elk用户上
 2. 修改kibana解压目录下config里面的配置文件：kibana.yml，新增如下内容：
 ````bash
@@ -154,7 +154,7 @@ i18n.locale: "zh-CN"
 ````
 3. 浏览器访问；192.168.1.220:5601
 
-### 五、logtash的安装部署（我是部署在221上，任意服务器上都可部署）；
+### 五、logtash的安装部署（我是部署在221上，任意服务器上都可部署）
 1. 将安装包解压至/usr/local/elk目录下，并修改权限到elk用户上
 2. 在config目录下新建一个文件myLogstash.conf
 ````bash
@@ -196,7 +196,7 @@ output { #日志输出源
 ./bin/logstash -f config/myLogstash.conf &
 ````
 
-### 六、将Filebeat日志采集部署至待采集的机器上；
+### 六、将Filebeat日志采集部署至待采集的机器上
 需求：需采集192.168.1.182上的nginx和tomcat日志,182服务器是windows server服务器，所以我下载的Filebeat是zip格式包
 1. 将Filebeat程序放到182上，并解压
 2. 修改配置文件filebet.yml:
@@ -207,7 +207,7 @@ output { #日志输出源
 filebet.exe -c filebeat.yml
 ````
 
-### 七、链路打通；
+### 七、链路打通
 1. 随便访问一下nginx和tomcat，使其产生日志
 2. 浏览器访问kibana服务查看es中的索引：
 <img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20191025/7.2.png"  align=left/>
@@ -218,10 +218,10 @@ filebet.exe -c filebeat.yml
 6. 在Discover界面查看采集的日志数据：
 <img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20191025/7.6.png"  align=left/>
 
-### 八、数据库数据的采集；
+### 八、数据库数据的采集
 logstash同样也可以采集数据库中的数据到es，只需要改input数据源中的相关配置就ok了，这里不再叙述详细步骤
 
-### 九、elasticsearch-head插件安装；
+### 九、elasticsearch-head插件安装
 参考链接：[elasticsearch-head插件安装](https://blog.csdn.net/qq924862077/article/details/79994565 "go")
 
 
