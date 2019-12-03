@@ -14,6 +14,7 @@ tags:
 4. nginx.conf中的负载均衡的配置详解；
 5. nginx的访问权限配置(基于ip和账号密码的两种方式)；
 6. https的访问配置；
+7. 新增stream模块以支持tcp代理(2019.12.03)；
 
 ### 二、本篇教程用的软件、技术和说明
 1. 使用到linux系统：CentOS 7.2；
@@ -348,3 +349,36 @@ server {
 [**<font color=purple>https://staticfile.erdongchen.top/</font>**](https://staticfile.erdongchen.top/ "我的博客")
 此配置也可以使用http访问
 [**<font color=purple>http://staticfile.erdongchen.top/</font>**](http://staticfile.erdongchen.top/ "我的博客")
+
+### 九、新增stream模块以支持tcp代理(2019.12.03)
+由于个人项目上需要用到tcp代理的需求，这里记录一下通过配置nginx来实现tcp的代理转发：
+1. 检查自己已经安装的nginx有没有支持stream模块：
+````bash
+nginx -V
+````
+ 如果在configure arguments 栏没有`--with-stream`模块，则表明nginx没有此模块；
+ 
+2. 上述命令执行的结果里面有configure arguments，把里面参数复制一份，停掉nginx，然后在nginx安装目录执行命令 
+````bash
+# 备注：--with-http_ssl_module是之前带的模块（有多少模块带多少），再在后面追加--with-stream
+./configure --with-http_ssl_module --with-stream
+````
+
+3. 编译完成之后，在执行`make`命令；
+
+4. 如果没有报错，会在nginx安装目录下的objs目录生成nginx文件，把该文件覆盖到sbin目录
+
+5. 配置stream模块，例如：
+ nginx.conf 主配置文件：
+<img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20190917/9.1.png"  align=left/>
+
+ 引入的外部文件配置：
+<img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20190917/9.2.png"  align=left/>
+
+6. 文件配置完毕之后，先检查配置是否正确：`nginx -t`,在启动nginx；这时便可以使用ngixn所在的服务器ip+端口（我这里配置的是80端口），nginx会自动将请求转发到192.168.1.184的2181端口上；步骤到这里就已经配置完毕了，实现了ip+端口的方式代理tcp请求，此配置也可以实现像mysql或者redis等等的tcp转发；
+
+
+
+
+
+
