@@ -1,6 +1,8 @@
 ---
 title: 大数据教程(三)-分布式ZooKeeper的集群搭建
 date: 2019-11-27 18:57:12
+top: true
+cover: true
 categories: 大数据
 tags: 
   - zookeeper
