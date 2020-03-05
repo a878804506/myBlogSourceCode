@@ -13,7 +13,7 @@ tags:
 ### 写在前面
 1. 在17年的时候，我参与了一个项目用的就是spring data jpa，那时候对hebernate不是很了解（因为我一直都是用的mybatis），稀里糊涂的做着需求，好在spring data jpa入门还是很容易的，特别的简单查询，就这样在百度中参与进那个项目的开发中；现在刚好有点时间可以学一学，就总结一下我的学习成果。
 2. 本系列文章是我在学习了《Spring data JPA从入门到精通》之后的总结；最后一篇系列文章将会有我写的例子作为实战，来检验一下自己的学习成果。
-3. [**<font color=purple>《Spring data JPA从入门到精通》电子书下载</font>**](http://staticfile.erdongchen.top/download/Spring-Data-JPA从入门到精通.pdf?n=abc.pdf "点击下载")
+3. [**<font color=purple>《Spring data JPA从入门到精通》电子书下载</font>**](http://staticfile.erdongchen.top/download/Spring-Data-JPA从入门到精通.pdf?n=Spring_data_JPA从入门到精通.pdf "点击下载")
 
 ### 一、本篇教程侧重点导读
 1. 顶级接口Repostitory介绍及层级关系；
