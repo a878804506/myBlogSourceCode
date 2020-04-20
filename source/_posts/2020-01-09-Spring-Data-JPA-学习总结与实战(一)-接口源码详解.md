@@ -27,6 +27,7 @@ tags:
 ### 二、本篇教程用的软件、技术和说明
 1. spring boot 版本：2.1.1.RELEASE；
 2. Spring Data JPA 版本：2.1.3.RELEASE；
+3. IntelliJ IDEA 2019.1.1
 
 ### 三、顶级接口Repostitory介绍及层级关系
 1. 首先要知道jpa是一种规范，hebernate是jpa的一种实现，Spring Data JPA底层用的还是hebernate，Spring Data JPA 是Spring Data的一个子项目。它依赖了Spring Data Common包,而接口Repostitory也是位于Spring Data Common的lib里面的，是Spring Data里面做数据库操作的最底层的抽象接口、 最顶级的父类， 源码里面其实什么方法都没有， 仅仅起到一个标识作用。
