@@ -1,7 +1,7 @@
 ---
 title: Spring Data JPA 学习总结与实战(二)-常用注解详解
-top: true
-cover: true
+top: false
+cover: false
 date: 2020-01-10 10:12:00
 categories: Spring Data JPA
 tags:

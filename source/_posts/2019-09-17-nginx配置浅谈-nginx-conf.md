@@ -18,7 +18,7 @@ tags:
 
 ### 二、本篇教程用的软件、技术和说明
 1. 使用到linux系统：CentOS 7.2；
-2. 使用到的nginx版本：1.15.2
+2. 使用到的nginx版本：1.15.2；
 
 ### 三、nginx.conf配置总体说明以及示例
 1. **<font color=green>全局块</font>**：配置影响nginx全局的指令。一般有运行nginx服务器的用户组，nginx进程pid存放路径，日志存放路径，配置文件引入，允许生成worker process数等。
