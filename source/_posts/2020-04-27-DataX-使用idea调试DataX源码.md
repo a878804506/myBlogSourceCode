@@ -1,7 +1,7 @@
 ---
 title: DataX-使用idea调试DataX源码
-top: true
-cover: true
+top: false
+cover: false
 date: 2020-04-27 14:01:24
 categories: DataX
 tags: 
@@ -55,3 +55,6 @@ E:\datax_source\DataX\target\datax\datax\bin\datax.py E:\datax_source\DataX\targ
  配置完成后，在DataX的主程序入口打个debug点（DataX的主程序入口在com.alibaba.datax.core.Engine类的main方法）：
  <img style="width:85%;height:85%" src="https://staticfile.erdongchen.top/blog/blogPicture/20200427/5.2.png"  align=left/>
  即可开始源码解析之旅！
+ 
+### 六、乱码解决
+ 在cmd窗口debug的时候，DataX打印的日志可能会有乱码，可以在命令行键入`chcp 65001`即可；这个方法只可以在该cmd窗口有效，下次再打开cmd窗口就失效了，可以修改注册表，来永久修改，方法自行百度。
