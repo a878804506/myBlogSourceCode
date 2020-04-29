@@ -159,7 +159,7 @@ public static void entry(final String[] args) throws Throwable {
 	
 	Engine engine = new Engine();
 	/**
-     * by 陈韵辉
+     * by 耳东陈
      * 说明：
      * start过程中做了两件事：
      *
@@ -252,7 +252,7 @@ public static Configuration parse(final String jobPath) {
  * post以及destroy和statistics
  */
 /**
- * by 陈韵辉
+ * by 耳东陈
  * 说明：
  * JobContainer的start方法会执行一系列job相关的操作，如下：
  *
@@ -277,13 +277,13 @@ public void start() {
 			this.preCheck();
 		} else {
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 拷贝一份新的配置，保证线程安全
 			 */
 			userConf = configuration.clone();
 			LOG.debug("jobContainer starts to do preHandle ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 执行preHandle()操作
 			 */
 			this.preHandle();
@@ -293,14 +293,14 @@ public void start() {
 			this.init();
 			LOG.info("jobContainer starts to do prepare ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 执行plugin的prepare
 			 */
 			this.prepare();
 
 			LOG.info("jobContainer starts to do split ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 说明：
 			 * DataX的job的split过程主要是根据限流配置计算channel的个数，进而计算task的个数
 			 */
@@ -308,20 +308,20 @@ public void start() {
 
 			LOG.info("jobContainer starts to do schedule ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 执行任务调度
 			 */
 			this.schedule();
 			LOG.debug("jobContainer starts to do post ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 执行后置操作
 			 */
 			this.post();
 
 			LOG.debug("jobContainer starts to do postHandle ...");
 			/**
-			 * by 陈韵辉
+			 * by 耳东陈
 			 * 执行postHandle操作
 			 */
 			this.postHandle();
@@ -343,7 +343,7 @@ public void start() {
  * reader和writer的初始化
  */
  /**
- * by 陈韵辉
+ * by 耳东陈
  * 说明：
  * Job的init()过程主要做了两个事情，分别是:
  *
@@ -364,7 +364,7 @@ private void init() {
 	Thread.currentThread().setName("job-" + this.jobId);
 
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * 初始化
 	 */
 	JobPluginCollector jobPluginCollector = new DefaultJobPluginCollector(
@@ -397,7 +397,7 @@ private void init() {
  * 同时不同的执行模式调用不同的调度策略，将所有任务调度起来
  */
 /**
- * by 陈韵辉
+ * by 耳东陈
  * 执行任务调度
  * 说明：
  * Job的schedule的过程主要做了两件事，分别是：
@@ -418,7 +418,7 @@ private void schedule() {
 	PerfTrace.getInstance().setChannelNumber(needChannelNumber);
 
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * 这里会公平的将task任务分成多个taskGroup，在后面会根据每组任务数量创建线程池，执行task
 	 * 通过获取配置信息得到每个taskGroup需要运行哪些tasks任务
 	 */
@@ -433,7 +433,7 @@ private void schedule() {
 		//省略代码
 		
 		/**
-		 * by 陈韵辉
+		 * by 耳东陈
 		 * 开始调度所有的taskGroup
 		 */
 		scheduler.schedule(taskGroupConfigs);
@@ -469,7 +469,7 @@ private void schedule() {
 ProcessInnerScheduler的startAllTaskGroup方式是重写了AbstractScheduler的startAllTaskGroup方法，其逻辑很明朗
 ````java
 /**
- * by 陈韵辉
+ * by 耳东陈
  * 说明：
  * TaskGroup的Schedule方法做的事情如下：
  *
@@ -480,23 +480,23 @@ ProcessInnerScheduler的startAllTaskGroup方式是重写了AbstractScheduler的s
 @Override
 public void startAllTaskGroup(List<Configuration> configurations) {
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * 根据taskGroup的数量启动固定的线程数
 	 */
 	this.taskGroupContainerExecutorService = Executors
 			.newFixedThreadPool(configurations.size());
 
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * 每个taskGroup启动一个TaskGroupContainerRunner
 	 */
 	for (Configuration taskGroupConfiguration : configurations) {
 		/**
-		 * by 陈韵辉
+		 * by 耳东陈
 		 * 创建TaskGroupContainerRunner并提交线程池运行
 		 */
 		/**
-		 * by 陈韵辉
+		 * by 耳东陈
 		 * 在TaskGroupContainerRunner的run()方法内部执行this.taskGroupContainer.start()方法。
 		 */
 		TaskGroupContainerRunner taskGroupContainerRunner = newTaskGroupContainerRunner(taskGroupConfiguration);
@@ -504,7 +504,7 @@ public void startAllTaskGroup(List<Configuration> configurations) {
 	}
 
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * 等待所有任务执行完后会关闭，执行该方法后不会再接收新任务
 	 */
 	this.taskGroupContainerExecutorService.shutdown();
@@ -521,7 +521,7 @@ TaskGroupContainer的内部主要做的事情如下：
 核心逻辑在于while循环：
 ````java
 /**
- * by 陈韵辉
+ * by 耳东陈
  *  下面实现主要分为以下几个步骤：
  *    循环检测所有任务的执行状态
  *       1）判断是否有失败的task，如果有则放入失败对立中，并查看当前的执行是否支持重跑和failOver，如果支持则重新放回执行队列中；如果没有失败，则标记任务执行成功，并从状态轮询map中移除
@@ -613,12 +613,12 @@ while (true) {
 			}
 		}
 		/**
-		 * by 陈韵辉
+		 * by 耳东陈
 		 * 需要新建任务的配置信息
 		 */
 		Configuration taskConfigForRun = taskMaxRetryTimes > 1 ? taskConfig.clone() : taskConfig;
 		/**
-		 * by 陈韵辉
+		 * by 耳东陈
 		 * taskExecutor应该就需要新建的任务
 		 */
 		TaskExecutor taskExecutor = new TaskExecutor(taskConfigForRun, attemptCount);
@@ -672,7 +672,7 @@ reportTaskGroupCommunication(lastTaskGroupContainerCommunication, taskCountInThi
 
 ````java
 /**
- * by 陈韵辉
+ * by 耳东陈
  * 说明：
  * TaskExecutor是一个完整task的执行器
  * TaskExecutor的启动过程主要做了以下事情：
@@ -703,7 +703,7 @@ public TaskExecutor(Configuration taskConf, int attemptCount) {
 	this.channel = ClassUtil.instantiate(channelClazz,
 			Channel.class, configuration);
 	/**
-	 * by 陈韵辉
+	 * by 耳东陈
 	 * channel在这里生成，每个taskGroup生成一个channel，
 	 * 在generateRunner方法当中生成writer或reader并注入channel
 	 */
