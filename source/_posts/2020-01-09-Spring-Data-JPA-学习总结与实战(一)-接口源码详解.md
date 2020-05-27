@@ -1,7 +1,7 @@
 ---
 title: Spring Data JPA 学习总结与实战(一)-接口源码详解
-top: true
-cover: true
+top: false
+cover: false
 date: 2020-01-09 14:09:32
 categories: Spring Data JPA
 tags:
